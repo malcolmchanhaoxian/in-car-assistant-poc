@@ -1,0 +1,8 @@
+{
+  "vehicle_id": "demo-001",
+  "speed_kmh": 90,
+  "battery_percent": 18,
+  "battery_temp_c": 41,
+  "outside_temp_c": 33,
+  "nearest_charger_km": 24
+}
