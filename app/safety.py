@@ -10,13 +10,14 @@ from enum import Enum
 
 from pydantic import BaseModel
 
+from . import config
 from .vehicle import Telemetry
 
 # Thresholds are named constants so they are easy to audit and to test.
-LOW_BATTERY_THRESHOLD_PERCENT = 20.0
-RESERVE_BATTERY_THRESHOLD_PERCENT = 30.0
-CHARGER_DISTANCE_THRESHOLD_KM = 40.0
-BATTERY_TEMP_THRESHOLD_C = 50.0
+LOW_BATTERY_THRESHOLD_PERCENT = config.LOW_BATTERY_THRESHOLD_PERCENT
+RESERVE_BATTERY_THRESHOLD_PERCENT = config.RESERVE_BATTERY_THRESHOLD_PERCENT
+CHARGER_DISTANCE_THRESHOLD_KM = config.CHARGER_DISTANCE_THRESHOLD_KM
+BATTERY_TEMP_THRESHOLD_C = config.BATTERY_TEMP_THRESHOLD_C
 
 _SEVERITY_RANK = {"info": 0, "warning": 1, "critical": 2}
 
